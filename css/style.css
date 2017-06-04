@@ -61,8 +61,9 @@ body{
 }
 
 .scroll{
+	display: block;
     position: absolute;
-    bottom: 3rem;
+    bottom: 2rem;
 }
 
 .scroll-text{
