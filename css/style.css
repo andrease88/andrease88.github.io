@@ -31,10 +31,19 @@ body{
 }
 
 .intro{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 100vh;
 }
 
@@ -73,6 +82,7 @@ hr {
 
 .partner{
     color: rgb(255, 171, 64);
+    -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
 }
 
@@ -84,24 +94,6 @@ hr {
 
 /*scroll*/
 @-webkit-keyframes ani-mouse {
-	0% {
-	opacity: 1;
-	top: 29%;
-	}
-	15% {
-	opacity: 1;
-	top: 50%;
-	}
-	50% {
-	opacity: 0;
-	top: 50%;
-	}
-	100% {
-	opacity: 0;
-	top: 29%;
-	}
-}
-@-moz-keyframes ani-mouse {
 	0% {
 	opacity: 1;
 	top: 29%;
@@ -173,7 +165,6 @@ hr {
 	height: 55px;
 	margin: 0 auto 20px;
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 3px solid teal;
 	border-radius: 23px;
@@ -189,6 +180,5 @@ hr {
 	background: teal;
 	border-radius: 50%;
 	-webkit-animation: ani-mouse 2.5s linear infinite;
-	-moz-animation: ani-mouse 2.5s linear infinite;
 	animation: ani-mouse 2.5s linear infinite;
 }
