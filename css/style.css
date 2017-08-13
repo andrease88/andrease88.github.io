@@ -33,11 +33,6 @@ body {
     color: #008080;
 }
 
-.scroll{
-    position: absolute;
-    bottom: 2rem;
-}
-
 hr {
     display: block;
     height: 1px;
